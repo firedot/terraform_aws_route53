@@ -6,3 +6,4 @@ ruby
 terraform.tfstate.d/
 .working/
 .vagrant/
+.terraform.tfstate*
