@@ -28,3 +28,7 @@ data "aws_route53_zone" "selected" {
   name       = "visitbg.local"
   depends_on = ["aws_route53_zone.primary"]
 }
+
+data "dns_a_record_set" "visitbg_local_ns" {
+  host = "${data.aws_route53_zone.selected.name_servers.0}"
+}
