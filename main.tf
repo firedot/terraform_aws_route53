@@ -23,3 +23,7 @@ resource "aws_route53_record" "visitbg-www" {
   records = ["172.28.128.3"]
   ttl     = "30"
 }
+
+data "aws_route53_zone" "selected" {
+  name = "visitbg.local."
+}
