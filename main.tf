@@ -30,5 +30,7 @@ data "aws_route53_zone" "selected" {
 }
 
 data "dns_a_record_set" "visitbg_local_ns" {
-  host = "${data.aws_route53_zone.selected.name_servers.0}"
+  count      = 4
+  host       = "${data.aws_route53_zone.selected.name_servers[count.index]}"
+  depends_on = ["data.aws_route53_zone.selected"]
 }
