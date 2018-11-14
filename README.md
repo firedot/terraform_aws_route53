@@ -17,6 +17,16 @@ export TF_VAR_region_id="<your_region_id>"
 export TF_VAR_vpc_security_group_ids='["<your_security_group_id>","<your_security_group_id>"]'
 
 ```
+
+## TO-DO
+
+- Create a terraform config that creates a zone ```visitbg.local``` in AWS Route53
+- Edit the config to add record to zone ```visitbg.local``` in AWS Route53
+
+
+## DONE
+
+
 ## How to use this repository
 
 
