@@ -25,5 +25,6 @@ resource "aws_route53_record" "visitbg-www" {
 }
 
 data "aws_route53_zone" "selected" {
-  name = "visitbg.local."
+  name       = "visitbg.local"
+  depends_on = ["aws_route53_zone.primary"]
 }
