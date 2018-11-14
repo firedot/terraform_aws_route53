@@ -20,8 +20,6 @@ export TF_VAR_vpc_security_group_ids='["<your_security_group_id>","<your_securit
 
 ## TO-DO
 
-- Edit the terraform configuration to do the following in AWS Route53:
-  - resolv the IP of a DNS server of the zone
 
 ## DONE
 
@@ -30,6 +28,7 @@ export TF_VAR_vpc_security_group_ids='["<your_security_group_id>","<your_securit
 - Edit the terraform configuration to do the following in AWS Route53:
   - create a zone/or have an existing zone
   - grab the list of DNS of that zone
+  - resolv the IP of a DNS server of the zone
 
 
 ## How to use this repository
