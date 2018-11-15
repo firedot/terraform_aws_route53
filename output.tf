@@ -7,7 +7,7 @@ output "zone_id" {
 # The following code will provide us with the FQDNs of the NameServers responsible for our AWS Route53 zone
 
 output "name_servers" {
-  value = "${data.aws_route53_zone.selected.name_servers}"
+  value = "${aws_route53_zone.primary.name_servers}"
 }
 
 # The following block of code will give us the IP Addresses of the NameServers responsible for our AWS Route53 zone. 
