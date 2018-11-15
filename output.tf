@@ -3,7 +3,7 @@ output "zone_id" {
 }
 
 output "name_servers" {
-  value = "${data.aws_route53_zone.selected.name_servers}"
+  value = "${aws_route53_zone.primary.name_servers}"
 }
 
 output "name_server_ip" {
